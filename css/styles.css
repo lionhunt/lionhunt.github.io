@@ -8,6 +8,7 @@ section{
 #contact {
     padding-bottom: 150px;
 }
-.masthead{
-    background-image: url("../img/bg_v1.jpg");
+header.masthead{
+    background-image: url("../img/bg_v2.jpg");
+    background-position: top center;
 }
