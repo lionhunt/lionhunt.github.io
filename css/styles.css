@@ -1,4 +1,8 @@
 /* Stylesheet Created by Lillion Hunt 1-29-19 */
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Cookie|Dancing+Script|Great+Vibes|Major+Mono+Display|Pacifico|Playfair+Display|Sacramento|Satisfy');
+#mainNav .navbar-brand{
+    font-family: 'Major Mono Display', monospace;
+}
 section{
     padding-bottom: 0;
 }
