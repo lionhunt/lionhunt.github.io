@@ -1,7 +1,10 @@
 /* Stylesheet Created by Lillion Hunt 1-29-19 */
 @import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Cookie|Dancing+Script|Great+Vibes|Major+Mono+Display|Pacifico|Playfair+Display|Sacramento|Satisfy');
 #mainNav .navbar-brand{
-    font-family: 'Major Mono Display', monospace;
+    font-family: 'Sacramento', cursive;
+}
+header.masthead .intro-text .intro-lead-in{
+    font-family: 'Sacramento', cursive;
 }
 section{
     padding-bottom: 0;
@@ -13,6 +16,7 @@ section{
     padding-bottom: 150px;
 }
 header.masthead{
-    background-image: url("../img/bg_header.jpg");
-    background-position: top center;
+    background-image: none;
+    /*background-image: url("../img/bg_header.jpg");
+    background-position: top center;*/
 }
