@@ -17,6 +17,7 @@ section{
 }
 header.masthead{
     background-image: none;
+    background-color: #212529;
     /*background-image: url("../img/bg_header.jpg");
     background-position: top center;*/
 }
