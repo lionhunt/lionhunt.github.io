@@ -25,6 +25,49 @@
   <link href="css/styles.css" rel="stylesheet">
   <link rel="shortcut icon" href="img/favicon.ico">
 
+  <!-- Google Chart -->
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript">
+
+    google.charts.load("current", {packages:['corechart']});
+        google.charts.setOnLoadCallback(drawChart);
+        
+    function drawChart() {
+    var data = google.visualization.arrayToDataTable([
+            ['Region', 'Mexico', 'Europe', 'Canada',
+             'Caribbean', 'Asia', { role: 'annotation' } ],
+            ['Jan', 2649245, 701121, 566595, 621686, 476827, ''],
+            ['Feb', 2604381, 620460, 618674, 683538, 387650, ''],
+            ['Mar', 3102558, 1064429, 723952, 822751, 513034, ''],
+            ['Apr', 2883496, 1212898, 881188, 783076, 495884, ''],
+            ['May', 2761663, 1684659, 1160399, 714117, 477954, ''],
+            ['June', 3092416, 2139814, 1808757, 865847, 525875, ''],
+            ['Jul', 3310766, 1867812, 2278435, 959510, 504326, ''],
+            ['Aug', 2706861, 1627172, 2066968, 718092, 419586, ''],
+            ['Sept', 2425061, 1676165, 1461190, 356693, 420099, ''],
+            ['Oct', 2718929, 1201375, 1060594, 473086, 504961, ''],
+            ['Nov', 3069218, 928855, 754760, 567498, 507576, ''],
+            ['Dec', 3725467, 1068009, 944412, 754622, 537118, '']
+          ]);
+    
+    var options = {
+            width: 1200,
+            height: 350,
+            legend: { position: 'top', alignment:'center'},
+            vAxis: {format: 'long', title: '# of travelers'},
+            bar: {groupWidth: '75%'},
+            isStacked: true,
+            colors: ['#cadcff', '#cbe2f9', '#cde7f4', '#ceedee', '#d0f3e8','#DAFFF3'],
+            // hAxis: {title: 'month'}
+            };
+    
+
+    var chart = new google.visualization.ColumnChart(document.getElementById('columnchart_stacked'));
+          chart.draw(data, options);
+    }
+    
+    </script>
+
 </head>
 
 <body id="page-top">
@@ -602,7 +645,9 @@
                 <!-- Project Details Go Here -->
                 <h2 class="text-uppercase">International Travel Trends</h2>
                 <p class="item-intro text-muted">Data Visualization designed on Google Charts using HTML and CSS</p>
-                <img class="img-fluid d-block mx-auto" src="img/portfolio/intl-travel-full.png" alt="chart showing July as the most popular month to travel internationally for Americans">
+                <!-- <img class="img-fluid d-block mx-auto" src="img/portfolio/intl-travel-full.png" alt="chart showing July as the most popular month to travel internationally for Americans"> -->
+                <div id="columnchart_stacked"></div>
+                <p class="source">Source: U.S. Department of Commerce, International Trade Administration, National Travel and Tourism Office (NTTO)</p>          
                 <ul class="list-inline">
                   <li>Date: June 2018</li>
                   <li>Client: NEHA Magazine</li>
