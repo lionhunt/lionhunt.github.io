@@ -25,4 +25,8 @@ header.masthead{
     font-size: 12px;
     text-align: center;
 }
+svg {
+    margin-left: -101px;
+}
+
 
