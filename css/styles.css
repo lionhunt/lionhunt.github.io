@@ -28,3 +28,9 @@ header.masthead{
 #team p {
     font-size: 0.8rem;
 }
+
+@media (min-width: 768px) {
+    .portfolio-modal .modal-content h2{
+        font-size: 2em;
+}
+}
