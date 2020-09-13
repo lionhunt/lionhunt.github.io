@@ -8,7 +8,10 @@ header.masthead .intro-text .intro-lead-in{
     font-family: 'Sacramento', cursive;
 }
 section{
-    padding-bottom: 0;
+    padding: 70px 0; !important; 
+}
+#services {
+    margin-bottom: 50px;
 }
 #team {
     padding-bottom: 150px;
