@@ -1,4 +1,5 @@
 /* Stylesheet Created by Lillion Hunt 1-29-19 */
+/* Lastly Updated by Lillion Hunt 9-13-20 */
 @import url('https://fonts.googleapis.com/css?family=Sacramento');
 #mainNav .navbar-brand{
     font-family: 'Sacramento', cursive;
@@ -49,6 +50,10 @@ header.masthead{
     background-color: #555; /* Add a dark-grey background on hover */
   }
   
+.footer-text {
+    color: #fff;
+}
+
 @media (max-width: 768px) {
     .portfolio-modal .modal-content h2{
         font-size: 2em;
