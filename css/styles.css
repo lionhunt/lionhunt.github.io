@@ -229,6 +229,8 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 .arrows {
     font-size: 18px;
 }
+.modal-body .w-100 {
+    width: 90%!important;
 }
 @media (max-width: 991px) {
     .about img{
