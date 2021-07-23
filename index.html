@@ -23,7 +23,10 @@
   <!-- Custom styles for this template -->
   <link href="css/agency.min.css" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet">
-  <link rel="shortcut icon" href="img/favicon.ico">
+  <link rel="shortcut icon" href="img/code.svg">
+
+  <!-- Custom Icons -->
+  <script src="https://kit.fontawesome.com/680c74252e.js" crossorigin="anonymous"></script>
 
   <!-- Google Chart -->
 <!--   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
@@ -69,6 +72,7 @@
     
     </script>
  -->
+ 
 </head>
 
 <body id="page-top">
@@ -76,13 +80,13 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">Lillion Hunt</a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        Menu
-        <i class="fas fa-bars"></i>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
+
+<a class="navbar-brand js-scroll-trigger" href="#page-top">Lillion Hunt</a>
+
+<button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fas fa-bars"></i>
+</button>
+      
+      <div class="navbar-collapse collapse" id="navbarResponsive" style="">
         <ul class="navbar-nav text-uppercase ml-auto">
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#services">Skills</a>
@@ -100,6 +104,42 @@
       </div>
     </div>
   </nav>
+
+  <button
+  type="button"
+  class="btn btn-floating btn-lg"
+  id="btn-back-to-top"
+  >
+<i class="fas fa-arrow-up"></i>
+</button>
+
+<script>
+    //Get the button
+let mybutton = document.getElementById("btn-back-to-top");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (
+    document.body.scrollTop > 20 ||
+    document.documentElement.scrollTop > 20
+  ) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+// When the user clicks on the button, scroll to the top of the document
+mybutton.addEventListener("click", backToTop);
+
+function backToTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
 
   <!-- Header -->
   <header class="masthead">
@@ -119,53 +159,74 @@
       <div class="row">
         <div class="col-lg-12 text-center">
           <h2 class="section-heading text-uppercase">Skills</h2>
-          <h3 class="section-subheading text-muted">Check out what I have to offer.</h3>
+          <!--<h3 class="section-subheading text-muted">Check out what I have to offer.</h3>-->
         </div>
       </div>
       <div class="row text-center">
         <div class="col-md-4">
+            <div class="box">
           <span class="fa-stack fa-4x">
             <i class="fas fa-circle fa-stack-2x text-primary"></i>
             <i class="fas fa-code fa-stack-1x fa-inverse"></i>
           </span>
           <h4 class="service-heading">Web Design</h4>
-          <p class="text-muted">I work with HTML, CSS and JavaScript to create Accessibile, mobile-friendly pages.</p>
+          <p class="text-muted">I work with HTML, CSS and JavaScript to create accessible, mobile-friendly pages. Did I mention this website is made by yours truly. Hope you enjoy!</p>
+        </div>
         </div>
         <div class="col-md-4">
+            <div class="box">
           <span class="fa-stack fa-4x">
             <i class="fas fa-circle fa-stack-2x text-primary"></i>
-            <i class="fa fa-newspaper fa-stack-1x fa-inverse"></i>
+            <i class="fas fa-newspaper fa-stack-1x fa-inverse"></i>
           </span>
           <h4 class="service-heading">Journalism</h4>
-          <p class="text-muted">There are many stories to be told, but my favorite stories to cover revolve around technology.</p>
+          <p class="text-muted">Whether it’s written—blog writing, copywriting and PR pieces—or broadcast—radio and video productions—I’m here to help.</p>
+        </div>
         </div>
         <div class="col-md-4">
-          <span class="fa-stack fa-4x">
-            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-            <i class="fas fa-paint-brush fa-stack-1x fa-inverse"></i>
-          </span>
-          <h4 class="service-heading">Graphic Design</h4>
-          <p class="text-muted">I work with Photoshop, Illustrator and InDesign to create images I discover in my head.</p>
-        </div>
-      </div>
-    <!-- Row 2 -->
-    <div class="row text-center">
-        <div class="col-md-6">
+            <div class="box">
           <span class="fa-stack fa-4x">
             <i class="fas fa-circle fa-stack-2x text-primary"></i>
             <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
           </span>
           <h4 class="service-heading">Email Marketing</h4>
-          <p class="text-muted">Creating email campaigns allows me to focus on a variety of skills such as content writing, photo editing, graphic designing and creating custom code for email newsletters.</p>
+          <p class="text-muted">Creating email campaigns allows me to focus on a variety of skills such as copywriting, photo editing, graphic designing and creating custom code for email newsletters.</p>
         </div>
-        <div class="col-md-6">
+      </div>
+      </div>
+    <!-- Row 2 -->
+    <div class="row text-center">
+        <div class="col-md-4">
+            <div class="box">
           <span class="fa-stack fa-4x">
             <i class="fas fa-circle fa-stack-2x text-primary"></i>
-            <i class="fa fa-mobile fa-stack-1x fa-inverse"></i>
+            <i class="fas fa-palette fa-stack-1x fa-inverse"></i>
+          </span>
+          <h4 class="service-heading">Graphic Design</h4>
+          <p class="text-muted">I’ve created everything from flyers and business cards to graphics for social media and email campaigns using Photoshop, Illustrator and InDesign.
+        </p>
+        </div>
+        </div>
+        <div class="col-md-4">
+            <div class="box">
+          <span class="fa-stack fa-4x">
+            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+            <i class="fas fa-comments fa-stack-1x fa-inverse"></i>
           </span>
           <h4 class="service-heading">Social Media</h4>
           <p class="text-muted">Working as a Social Media Specialist has allowed me to create data-driven decisions with content our followers will engage with most.</p>
         </div>
+    </div>
+    <div class="col-md-4">
+        <div class="box">
+      <span class="fa-stack fa-4x">
+        <i class="fas fa-circle fa-stack-2x text-primary"></i>
+        <i class="fas fa-chart-line fa-stack-1x fa-inverse"></i>
+      </span>
+      <h4 class="service-heading">Marketing</h4>
+      <p class="text-muted">Creating marketing strategies for food, events, apps, retail products and classes has allowed me to broaden my horizons as a digital marketer. </p>
+    </div>
+</div>
         
       </div>
     </div>
@@ -177,7 +238,7 @@
       <div class="row">
         <div class="col-lg-12 text-center">
           <h2 class="section-heading text-uppercase">Portfolio</h2>
-          <h3 class="section-subheading text-muted">Take a look at my work, in a variety of platforms.</h3>
+          <!--<h3 class="section-subheading text-muted">Take a look at my work, in a variety of platforms.</h3>-->
         </div>
       </div>
       <div class="row">
@@ -202,10 +263,10 @@
                 <i class="fas fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="img/portfolio/bgc-thumbnail.jpg" alt="Lollipops in the shape of binary code">
+            <img class="img-fluid" src="img/portfolio/tea-thumbnail.jpg" alt="Lollipops in the shape of binary code">
           </a>
           <div class="portfolio-caption">
-            <h4>Black Girls Code</h4>
+            <h4>Tea vs. Coffee</h4>
             <p class="text-muted">Graphic Design</p>
           </div>
         </div>
@@ -224,17 +285,17 @@
           </div>
         </div>
         <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
+          <a class="portfolio-link" data-toggle="modal" target="_blank" href="https://www.facebook.com/mccsokinawa/posts/2418445331537467">
             <div class="portfolio-hover">
               <div class="portfolio-hover-content">
                 <i class="fas fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="img/portfolio/intl-travel-thumbnail.jpg" alt="chart showing June as the most popular month to travel internationally for Americans">
+            <img class="img-fluid" src="img/portfolio/comic-con-thumbnail.jpg" alt="Family meeting Darth Vader from Star Wars at Comic Con Okinawa">
           </a>
           <div class="portfolio-caption">
-            <h4>International Travel Trends</h4>
-            <p class="text-muted">Data Visualization</p>
+            <h4>Comic Con Okinawa</h4>
+            <p class="text-muted">Public Relations</p>
           </div>
         </div>
         <div class="col-md-4 col-sm-6 portfolio-item">
@@ -247,23 +308,23 @@
             <img class="img-fluid" src="img/portfolio/wwt-full.png" alt="Wonder Women Tech Logo">
           </a>
           <div class="portfolio-caption">
-            <h4>WonderWomenTech</h4>
+            <h4>Wonder Women Tech</h4>
             <p class="text-muted">Web Design</p>
           </div>
         </div>
 
         <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
+          <a class="portfolio-link" data-toggle="modal" target="_blank" href="https://mailchi.mp/b0d09d74465d/resort-survey?e=a9e1d09839">
             <div class="portfolio-hover">
               <div class="portfolio-hover-content">
                 <i class="fas fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="img/portfolio/girl_blowing_snow.jpg" alt="Girl blowing snow off hands">
+            <img class="img-fluid" src="img/portfolio/resort-thumbnail.jpg" alt="Kafuu Resort Fuchaku Condo Hotel">
           </a>
           <div class="portfolio-caption">
-            <h4>Everything You Need to Know for a Syracuse Winter</h4>
-            <p class="text-muted">Published Writing</p>
+            <h4>2-Night Resort Stay</h4>
+            <p class="text-muted">Email Campaign</p>
           </div>
         </div>
         <div class="col-md-4 col-sm-6 portfolio-item">
@@ -273,54 +334,54 @@
                 <i class="fas fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="img/portfolio/online-thumbnail.jpg" alt="Chart showing Brazil as the country  with the highest average time spent online on their cellphones">
+            <img class="img-fluid" src="img/portfolio/hiring-thumbnail.jpg" alt="Chart showing Brazil as the country  with the highest average time spent online on their cellphones">
           </a>
           <div class="portfolio-caption">
-            <h4>Hours Online By Country</h4>
-            <p class="text-muted">Data Visualization</p>
+            <h4>Now Hiring</h4>
+            <p class="text-muted">Graphic Design</p>
           </div>
         </div>
         <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" target="_blank" href="https://www.youtube.com/watch?v=4PG6s8f72T0">
+          <a class="portfolio-link" data-toggle="modal" target="_blank" href="https://mailchi.mp/849d01148554/limited-time-drink?e=a9e1d09839">
             <div class="portfolio-hover">
               <div class="portfolio-hover-content">
                 <i class="fas fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="img/portfolio/wic-full.png" alt="Women in Coding Logo">
+            <img class="img-fluid" src="img/portfolio/coffee-thumbnail.jpg" alt="Frozen coffee drink">
           </a>
           <div class="portfolio-caption">
-            <h4>Women In Coding</h4>
-            <p class="text-muted">Virtual Reality 360 Video</p>
+            <h4>Limited-Time Delight</h4>
+            <p class="text-muted">Email Campaign</p>
           </div>
         </div>
         <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" target="_blank" href="http://careers.csulb.edu/">
+          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
             <div class="portfolio-hover">
               <div class="portfolio-hover-content">
                 <i class="fas fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="img/portfolio/cdc-full.png" alt="California State University Long Beach Career Development Center">
+            <img class="img-fluid" src="img/portfolio/fit-camp-thumbnail.jpg" alt="Looking for models for a fit camp photoshoot">
           </a>
           <div class="portfolio-caption">
-            <h4>Cal State Long Beach University Career Center</h4>
-            <p class="text-muted">Web Design</p>
+            <h4>Fit Camp Models</h4>
+            <p class="text-muted">Graphic Design</p>
           </div>
         </div>
 
         <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal10">
+          <a class="portfolio-link" data-toggle="modal" target="_blank" href="https://www.facebook.com/mccsokinawa/posts/2306741479374520">
             <div class="portfolio-hover">
               <div class="portfolio-hover-content">
                 <i class="fas fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="img/portfolio/intl-panel-thumbnail.jpg" alt="Blue flyer with pictures of popular cities around the world">
+            <img class="img-fluid" src="img/portfolio/grand-opening-thumbnail.jpg" alt="ceremonial ribbon-cutting to officially welcome the public to new lodging facility">
           </a>
           <div class="portfolio-caption">
-            <h4>International Career Panel</h4>
-            <p class="text-muted">Graphic Design</p>
+            <h4>Inn Grand Opening</h4>
+            <p class="text-muted">Public Relations</p>
           </div>
         </div>
 
@@ -346,10 +407,10 @@
                 <i class="fas fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="img/portfolio/wsa-holiday-party-thumbnail.png" alt="Holiday Party Invitation">
+            <img class="img-fluid" src="img/portfolio/burger-thumbnail.jpg" alt="Cheeseburger">
           </a>
           <div class="portfolio-caption">
-            <h4>Air Force Holiday Party Invitation</h4>
+            <h4>Burger Day</h4>
             <p class="text-muted">Graphic Design</p>
           </div>
         </div>
@@ -364,7 +425,7 @@
             <img class="img-fluid" src="img/portfolio/invitation-full-thumbnail.png" alt="elegant wedding invitation covered in blue roses">
           </a>
           <div class="portfolio-caption">
-            <h4>Elegant Wedding Invitation</h4>
+            <h4>Wedding Invitation</h4>
             <p class="text-muted">Graphic Design</p>
           </div>
         </div>
@@ -376,7 +437,7 @@
                 <i class="fas fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="img/portfolio/critiqueit-full.jpg" alt="woman's hands typing on keyboard">
+            <img class="img-fluid" src="img/portfolio/women-coding-thumbnail.jpg" alt="woman's hands typing on keyboard">
           </a>
           <div class="portfolio-caption">
             <h4>Perspective of Women in Tech</h4>
@@ -391,11 +452,11 @@
                 <i class="fas fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="img/portfolio/feedback-thumbnail.png" alt="Courtney Holiday Festival Feedback">
+            <img class="img-fluid" src="img/portfolio/online-thumbnail.jpg" alt="Chart showing Brazil as the country  with the highest average time spent online on their cellphones">
           </a>
           <div class="portfolio-caption">
-            <h4>Festival Feedback</h4>
-            <p class="text-muted">Graphic Design</p>
+            <h4>Hours Online By Country</h4>
+            <p class="text-muted">Data Visualization</p>
           </div>
         </div>
 
@@ -403,111 +464,6 @@
     </div>
   </section>
 
-
-  <!-- New About -->
-  <section class="bg-light" id="team">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">About</h2>
-          <h3 class="section-subheading text-muted">Learn about the mastermind behind the keyboard.</h3>
-        </div>
-      </div>
-
-      <div class="row col-lg-12 text-center">
-        <div data-type="column" class="col-sm-5">
-          <h2>Journalist turned
-            <br>
-            <span style="font-family: Playfair Display, sans-serif; font-weight: bold; font-style: italic;margin-right: 7px;"> Web Designer </span> to
-            <br> tech fanatic
-          </h2>
-          <p>I'm Lillion Hunt Hamilton and I love to express my creativity through code, art, and story-telling. I'm a Los Angeles
-            native who made my way to New York for grad school in pursuit of my Master's degree in Computational Journalism.
-            I'm currently living in Okinawa, Japan ready to explore the new opportunities this amazing island has in store
-            for me. </p>
-
-        </div>
-        <div class="col-lg-7">
-          <img src="img/team/bio-pic.png" alt="Lillion Hunt" class="col-lg-12">
-
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">Contact Me</h2>
-          <h3 class="section-subheading footer-text">Feel free to reach out if you have any questions or comments about my work. Let’s make something
-            awesome together! </h3>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-12">
-          <form method="POST" action="https://formspree.io/lillionhunt@gmail.com">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="form-group">
-                  <input type="text" name="name" placeholder="Your Name *" class="form-control">
-                </div>
-                <div class="form-group">
-                  <input type="email" name="email" placeholder="Your Email *" class="form-control">
-                </div>
-                <div class="form-group">
-                  <input type="tel" name="phone" placeholder="Your Phone *" class="form-control">
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="form-group">
-                  <textarea name="message" placeholder="Your Message *" class="form-control"></textarea>
-                </div>
-              </div>
-              <div class="clearfix"></div>
-              <div class="col-lg-12 text-center">
-                <button class="btn btn-primary btn-xl text-uppercase" type="submit">Send Message</button>
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <span class="copyright">Copyright © Lillion Hunt 2020</span>
-        </div>
-        <div class="col-md-4">
-          <ul class="list-inline social-buttons">
-            <li class="list-inline-item">
-              <a target="_blank" href="https://twitter.com/LillionHunt">
-                <i class="fab fa-twitter"></i>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a target="_blank" href="https://www.youtube.com/channel/UClcfTnGnrx9K87WYp3SHVnQ">
-                <i class="fab fa-youtube"></i>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a target="_blank" href="https://www.linkedin.com/in/lillion-hunt-coding-journalist/">
-                <i class="fab fa-linkedin-in"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-md-4">
-
-        </div>
-      </div>
-    </div>
-  </footer>
 
   <!-- Portfolio Modals -->
 
@@ -526,12 +482,41 @@
             <div class="col-lg-8 mx-auto">
               <div class="modal-body">
                 <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Code a Brighter Future Hackathon</h2>
-                <p class="item-intro text-muted">Illustration created using Adobe Photoshop</p>
-                <img class="img-fluid d-block mx-auto" src="img/portfolio/bgc-full.jpg" alt="Lollipops in the shape of binary code">
+                <h2 class="text-uppercase">Tea vs. Coffee</h2>
+                <p class="item-intro text-muted">Illustration created using Adobe Illustrator for Instagram Stories</p>
+                                <!-- Carousel -->
+                                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                                    <div class="carousel-inner">
+                                      <div class="carousel-item active">
+                                        <img class="d-block w-100" src="img/portfolio/tea-1.jpg" alt="First slide">
+                                      </div>
+                                      <div class="carousel-item">
+                                        <img class="d-block w-100" src="img/portfolio/tea-2.jpg" alt="Second slide">
+                                      </div>
+                                      <div class="carousel-item">
+                                        <img class="d-block w-100" src="img/portfolio/tea-3.jpg" alt="Third slide">
+                                      </div>
+                                      <div class="carousel-item">
+                                        <img class="d-block w-100" src="img/portfolio/tea-4.jpg" alt="Fourth slide">
+                                      </div>
+                                      <div class="carousel-item">
+                                        <img class="d-block w-100" src="img/portfolio/tea-5.jpg" alt="Fifth slide">
+                                      </div>
+                                      
+                                    </div>
+                                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                      <i class="fas fa-angle-left arrows" aria-hidden="true"></i>
+                                      <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                      <i class="fas fa-angle-right arrows" aria-hidden="true"></i>
+                                  
+                                      <span class="sr-only">Next</span>
+                                    </a>
+                                  </div>
                 <ul class="list-inline">
-                  <li>Date: July 2017</li>
-                  <li>Client: Black Girls Code</li>
+                  <li>Date: December 2020</li>
+                  <li>Client: Okinawa Living Magazine</li>
                   <li>Category: Graphic Design</li>
                 </ul>
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
@@ -665,15 +650,14 @@
             <div class="col-lg-12 mx-auto">
               <div class="modal-body">
                 <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">International Travel Trends</h2>
-                <p class="item-intro text-muted">Data Visualization designed on Google Charts using HTML and CSS</p>
-                 <img class="img-fluid d-block mx-auto" src="img/portfolio/intl-travel-full.png" alt="chart showing July as the most popular month to travel internationally for Americans"> 
+                <h2 class="text-uppercase">Fit Camp Models</h2>
+                <p class="item-intro text-muted">Graphic designed on Adobe Illustrator for Instagram Stories</p>
+                 <img class="img-fluid d-block mx-auto w-100" src="img/portfolio/fit-camp.png" alt="Looking for models for a fit camp photoshoot"> 
                 <!-- <div id="columnchart_stacked"></div> -->
-                <p class="source">Source: U.S. Department of Commerce, International Trade Administration, National Travel and Tourism Office (NTTO)</p>          
                 <ul class="list-inline">
-                  <li>Date: June 2018</li>
-                  <li>Client: NEHA Magazine</li>
-                  <li>Category: Data Visualization</li>
+                  <li>Date: March 2020</li>
+                  <li>Client: Marine Corps Community Services</li>
+                  <li>Category: Graphic Design</li>
                 </ul>
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                   <i class="fas fa-times"></i>
@@ -686,77 +670,6 @@
     </div>
   </div>
 
-  <!-- Modal 6 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-               <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Everything You Need to Know for a Syracuse Winter</h2>
-                <p class="item-intro text-muted">Article written to display on LivaebleCNY website</p>
-                <img class="img-fluid d-block mx-auto" src="img/portfolio/girl_blowing_snow.jpg" alt="girl blowing snow off of hands">
-                <p>CNY’s universities draw visitors from all over the world, and for many, the end of October brings a completely new experience– their first real winter. Syracuse is one of the snowiest cities in the country, and for that reason we made it our duty to prepare you for what’s to come. Here is our best advice for surviving a Syracuse winter.</p>
-
-                <p>If you’re coming from Asia, Europe, or even the West Coast, just know, this will be a life-changing experience.</p>
-
-                <h3>PREDICTED WEATHER</h3>
-                <p> A Syracuse winter typically lasts October to April. Although Syracuse has seen snow in the month of May, that is pretty rare. The city averages almost 125 inches of snow each year, but saw nearly 135 inches of snowfall last year. January is usually the snowiest month in Syracuse, and also the most likely time for temperatures to drop below freezing.</p>
-
-                <p>Make sure to check weather updates daily. Due to the lake effect snow, the weather may change abruptly. Just make it a habit to check the forecast before you head outside.</p>
-
-                <p>Due to the weather conditions, you want to give yourself extra time in your travels. If you plan on driving in the snow, give your car a couple of minutes to warm up. If you walk, give yourself extra time to reach your destination.</p>
-
-                <h3>WHAT TO DO BEFORE WINTER OFFICIALLY BEGINS</h3>
-
-                <p>There’s no telling how cold this year’s winter may be, but one thing is for sure: we must prepare for it. Syracuse does a great job on street snow removal if you decide to drive to the nearest grocery store, but having your groceries delivered through Amazon Fresh or Wegmans delivery service is ideal. This way, you won’t need to step out into the cold, or shovel the snow off of your car. Sometimes, there may be a couple hour delays due to weather conditions, so just make sure to plan ahead and stock up on basic essentials like water.</p>
-
-                <p>Some other important items to have in your home at all times are batteries, a flashlight, first aid kit, and snow shovel.</p>
-
-                <h3>HOW TO GEAR UP FOR THE SNOW</h3>
-
-                <p>A very important part of preparing for the snow is buying the right clothing. Having a coat suitable for a Syracuse winter is essential. Since Syracuse reaches below freezing temperatures, you want to make sure to get a coat warm enough for at least -20 degrees. Stores like Eddie Bauer includes tags on their coats that specify temperature levels built for the coat. A waterproof coat is also important in case of rain. Having rain soak through your coat will surely make you sick, and it will take extremely long to dry out. Additionally, a windproof coat will save your life. Some locals say the snow isn’t so bad, but the cold wind is unbearable. You want to make sure your coat is completely resistant to the wind. Preventing cold winds from reaching your chest can help you avoid getting sick.</p>                
-
-                <p>Snow boots are a must-have, especially for college students walking to and from campus. Once the snow starts melting, the whole city will turn into a big slushy mix of ice, snow and water. For that reason, you want to make sure your boots are waterproof, so your socks and feet don’t get wet. Anti-skid rubber soles are also crucial. To avoid slipping, make sure your boots have rubber soles. You can find these boots at stores like L.L.Bean. As an alternative to non-slip shoes, apply mink oil to your boots. Along with your boots, you may want to get a pair of thermal socks to keep your feet warm.</p>
-
-                <p>The city’s streets and sidewalks are often salted to avoid icing, which may ruin good shoes. To get rid of the salt, wipe your shoes with a wet cloth before they dry.</p>
-
-                <p>Some important snow accessories to keep in mind are gloves that prevent frostbite, a warm beanie to protect your head from any cold winds, a warm scarf to keep your neck and part of your face covered, or a ski mask to do the same.</p>
-
-                <h3>OUTDOOR ACTIVITIES</h3>
-
-                <p>Winter in Syracuse isn’t all bad, so grab some friends and embrace the cold.</p>
-
-                <p>Head down to an outdoor ice skating rink. Go skiing on the weekend. Have a snowball fight with your frenemies and build a snow fort to protect yourself. Build a snowman and hope he comes to life like Frosty once did. Make heavenly snow angels. Pull out your professional camera and take some amazing photos of the winter wonderland.</p>
-
-                <h3>INDOOR ACTIVITIES</h3>
-
-                <p>If it’s too cold to go outside, bring the fun indoors. Have a movie marathon with a pal, or binge watch your favorite shows. Pull out the board games and compete with your friends in a three-hour long Monopoly game. Bake some sweet treats, and have your home smell like pumpkin spice. And if it gets bad enough, start planning your next trip out of the city.</p>
-
-                <p>Your first winter in Syracuse may seem intimidating, but these helpful tips will get you through. And besides, how cool will it be to say that you lived in one of the snowiest cities in the country? Your friends and family back home will be very impressed.</p>
-
-                <ul class="list-inline">
-                  <li>Date: October 2017</li>
-                  <li>Client: LiveableCNY</li>
-                  <li>Category: Journalism</li>
-                </ul>
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                  <i class="fas fa-times"></i>
-                  Close Project</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
   <!-- Modal 7 -->
   <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
@@ -772,13 +685,13 @@
             <div class="col-lg-8 mx-auto">
               <div class="modal-body">
                 <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Time Spent Online</h2>
-                <p class="item-intro text-muted">Data Visualization designed on Adobe Illustrator</p>
-                <img class="img-fluid d-block mx-auto" src="img/portfolio/online-full.png" alt="Chart showing Brazil as the country  with the highest average time spent online on their cellphones">
+                <h2 class="text-uppercase">Now Hiring</h2>
+                <p class="item-intro text-muted">Graphic designed on Adobe Illustrator for social media</p>
+                <img class="img-fluid d-block mx-auto" src="img/portfolio/hiring.jpg" alt="Now hiring visual communications specialist">
                 <ul class="list-inline">
-                  <li>Date: June 2018</li>
-                  <li>Client: NEHA Magazine</li>
-                  <li>Category: Data Visualization</li>
+                  <li>Date: January 2020</li>
+                  <li>Client: Marine Corps Community Services</li>
+                  <li>Category: Graphic Design</li>
                 </ul>
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                   <i class="fas fa-times"></i>
@@ -871,12 +784,12 @@
             <div class="col-lg-8 mx-auto">
               <div class="modal-body">
                 <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Air Force Holiday Party</h2>
-                <p class="item-intro text-muted">Visual designed on Adobe Illustrator</p>
-                <img class="img-fluid d-block mx-auto" src="img/portfolio/wsa-holiday-party-full.jpg" alt="Holiday Party Invitation">
+                <h2 class="text-uppercase">International Burger Day</h2>
+                <p class="item-intro text-muted">Visual designed on Adobe Illustrator for an email campaign</p>
+                <img class="img-fluid d-block mx-auto" src="img/portfolio/burger-day.png" alt="Double Cheeseburger">
                 <ul class="list-inline">
-                  <li>Date: November 2019</li>
-                  <li>Client: Air Force</li>
+                  <li>Date: May 2020</li>
+                  <li>Client: Marine Corps Community Services</li>
                   <li>Category: Graphic Design</li>
                 </ul>
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
@@ -906,10 +819,30 @@
                 <!-- Project Details Go Here -->
                 <h2 class="text-uppercase">Wedding Invitation</h2>
                 <p class="item-intro text-muted">Graphic Design created using Adobe Illustrator</p>
-                <img class="img-fluid d-block mx-auto" src="img/portfolio/invitation-full.jpg" alt="elegant wedding invitation covered in blue roses">
+                <!-- Carousel -->
+                <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img class="d-block w-100" src="img/portfolio/invitation-full.jpg" alt="First slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="img/portfolio/invitation-back.jpg" alt="Second slide">
+                      </div>
+                      
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+                      <i class="fas fa-angle-left arrows" aria-hidden="true"></i>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators2" role="button" data-slide="next">
+                      <i class="fas fa-angle-right arrows" aria-hidden="true"></i>
+                  
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
                 <ul class="list-inline">
                   <li>Date: August 2018</li>
-                  <li>Client: Wedding</li>
+                  <li>Client: The Hamilton Family</li>
                   <li>Category: Graphic Design</li>
                 </ul>
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
@@ -937,13 +870,13 @@
             <div class="col-lg-8 mx-auto">
               <div class="modal-body">
                 <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Festival Feedback</h2>
-                <p class="item-intro text-muted">Graphic Design created using Adobe Illustrator</p>
-                <img class="img-fluid d-block mx-auto" src="img/portfolio/feedback-full.png" alt="Courtney Holiday Festival Feedback">
+                <h2 class="text-uppercase">Time Spent Online</h2>
+                <p class="item-intro text-muted">Data Visualization designed on Adobe Illustrator</p>
+                <img class="img-fluid d-block mx-auto" src="img/portfolio/online-full.png" alt="Chart showing Brazil as the country  with the highest average time spent online on their cellphones">
                 <ul class="list-inline">
-                  <li>Date: December 2019</li>
-                  <li>Client: Marine Corps Community Services (MCCS)</li>
-                  <li>Category: Graphic Design</li>
+                  <li>Date: June 2018</li>
+                  <li>Client: NEHA Magazine</li>
+                  <li>Category: Data Visualization</li>
                 </ul>
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                   <i class="fas fa-times"></i>
@@ -956,6 +889,103 @@
     </div>
   </div>
 
+  <!-- New About -->
+  <section class="bg-light" id="team">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">About</h2>
+          <!--<h3 class="section-subheading text-muted">Learn about the mastermind behind the keyboard.</h3>-->
+        </div>
+      </div>
+
+      <div class="row col-lg-12 text-center about">
+        <div class="col-sm-12 col-md-12 col-lg-7 order-lg-5">
+            <img src="img/team/lilly-sq.jpg" alt="Lillion Hunt" class="col-lg-12">
+  
+          </div>
+        <div data-type="column" class="col-sm-12 col-md-12 col-lg-5">
+            <h2>Nice to Finally Meet You</h2>
+          <p class="text-muted">Hi there! I’m Lillion Hunt and I love to express my creativity through code, design and story-telling. 
+            I was born and raised in Los Angeles, California but have made my way around the country for new opportunities. I’ve recently moved from the beautiful island of Okinawa, Japan where I was fortunate enough to work as a Digital Marketing Specialist. Now that I’ve offically touched down in Dayton, Ohio, I’m excited to see what the buckeye state has in store for me. I never turn down a challenge as it has lead me to my great passions today, and as someone once said, “all growth takes place outside of your comfort zone.”  </p>
+            <a href="lillion-hunt-resume.pdf" target="_blank"><button class="btn btn-primary btn-xl text-uppercase" type="submit">
+                View Resume</button></a>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Contact Me</h2>
+          <h3 class="section-subheading footer-text">Feel free to reach out if you have any questions or comments about my work. Let’s make something
+            awesome together! </h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <form method="POST" action="https://formspree.io/lillionhunt@gmail.com">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="form-group">
+                  <input type="text" name="name" placeholder="Name *" class="form-control">
+                </div>
+                <div class="form-group">
+                  <input type="email" name="email" placeholder="Email *" class="form-control">
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="form-group">
+                  <textarea name="message" placeholder="Message *" class="form-control"></textarea>
+                </div>
+              </div>
+              <div class="clearfix"></div>
+              <div class="col-lg-12 text-center">
+                <button class="btn btn-primary btn-xl text-uppercase" type="submit">Send Message</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <span class="copyright">Copyright © Lillion Hunt 2021</span>
+        </div>
+        <div class="col-md-4">
+          <ul class="list-inline social-buttons">
+            <li class="list-inline-item">
+              <a target="_blank" href="https://twitter.com/LillionHunt">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a target="_blank" href="https://www.youtube.com/channel/UClcfTnGnrx9K87WYp3SHVnQ">
+                <i class="fab fa-youtube"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a target="_blank" href="https://www.linkedin.com/in/lillion-hunt-coding-journalist/">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+
+        </div>
+      </div>
+    </div>
+  </footer>
 
 
   <!-- Bootstrap core JavaScript -->
