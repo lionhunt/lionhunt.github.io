@@ -217,6 +217,9 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 }
 
 @media (max-width: 768px) {
+    header.masthead .intro-text .intro-lead-in {
+    font-size: 27px;
+}
     .portfolio-modal .modal-content h2{
         font-size: 2em;
 }
