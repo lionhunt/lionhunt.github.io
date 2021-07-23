@@ -232,6 +232,9 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 .modal-body .w-100 {
     width: 90%!important;
 }
+.about h2 {
+    font-size: 1.44rem;
+}
 }
 
 @media (max-width: 991px) {
