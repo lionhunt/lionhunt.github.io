@@ -162,7 +162,18 @@ i.fas.fa-times {
     width: 60%!important;
     display: inline!important;
 }
-
+.article {
+    text-align: left;
+    }
+.article a {
+    color: #000;
+    }
+.article a:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-decoration-color: #e1ddd0;
+}    
+        
 /* About Section */
 #team {
     background-color: #fff!important;
