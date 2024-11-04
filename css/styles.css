@@ -249,6 +249,9 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 .about h2 {
     font-size: 1.44rem;
 }
+.carousel-wide {
+    width: 100%!important;
+}
 }
 
 @media (max-width: 991px) {
