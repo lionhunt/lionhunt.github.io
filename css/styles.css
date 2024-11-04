@@ -162,6 +162,9 @@ i.fas.fa-times {
     width: 60%!important;
     display: inline!important;
 }
+.carousel-wide {
+    width: 100%!important;
+}
 .article {
     text-align: left;
     }
@@ -248,9 +251,6 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 }
 .about h2 {
     font-size: 1.44rem;
-}
-.carousel-wide {
-    width: 100%!important;
 }
 }
 
