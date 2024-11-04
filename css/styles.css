@@ -162,7 +162,7 @@ i.fas.fa-times {
     width: 60%!important;
     display: inline!important;
 }
-.carousel-wide {
+.modal-body .carousel-wide {
     width: 100%!important;
 }
 .article {
