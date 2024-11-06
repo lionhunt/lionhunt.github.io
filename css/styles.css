@@ -188,6 +188,7 @@ i.fas.fa-times {
 .about h2 {
     text-align: left;
     font-family: 'Sacramento', cursive;
+    font-weight: 100;
 }
 .about button.btn {
     background-color: #e1ddd0;
