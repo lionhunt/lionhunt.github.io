@@ -191,7 +191,7 @@ i.fas.fa-times {
     font-weight: 100;
 }
 .about button.btn {
-    background-color: #e1ddd0;
+    background-color: #f2f0eb;
 }
 .about a {
     color: #000;
@@ -200,8 +200,8 @@ i.fas.fa-times {
     text-decoration: none;
 }
 .about button.btn:hover {
-    padding-left: 30px;
-    padding-right: 30px;
+    background-color: #f2f0eb !important;
+    border-radius: #f2f0eb !important;
 }
 .about img {
     border: 1px solid #fff;
