@@ -223,8 +223,8 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
     color:#000;
 }
 section#contact {
-    background-image: url(../img/footer-bckgrd.jpg);
-
+    background-image: url(../img/footer-bckgrd.jpg)!important;
+}
 /* Media Queries */
 @media (min-width: 992px){
 #mainNav.navbar-shrink {
